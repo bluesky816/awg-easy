@@ -38,7 +38,7 @@ jobs:
             echo "major_version=$(echo "$version" | cut -d. -f1)" >> $GITHUB_OUTPUT
       - name: Extract metadata (tags, labels) for Docker
         id: meta
-        uses: docker/metadata-action@v5
+        uses: docker/metadata-action@v6
         with:
           tags: |
             type=raw,value=latest
